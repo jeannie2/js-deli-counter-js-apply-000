@@ -1,6 +1,6 @@
-function takeANumber(thisLine, newName) {
-  thisLine.push(newName)
-  var x = thisLine.indexOf(newName) + 1
+function takeANumber(line, newName) {
+  line.push(newName)
+  var x = line.indexOf(newName) + 1
   return "Welcome, " + newName + ". You are number " + x + " in line."
 }
 
@@ -8,9 +8,9 @@ takeANumber(katzDeli, 'Ada')
 takeANumber(otherDeli, 'Grace')
 
 
-function nowServing(deliLine) {
-  if(deliLine.length!==0) {
-    return "Currently serving " + deliLine.shift() + "."
+function nowServing(line) {
+  if(line.length!==0) {
+    return "Currently serving " + line.shift() + "."
   } else {
     return "There is nobody waiting to be served!"
   }
